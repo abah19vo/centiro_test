@@ -1,0 +1,40 @@
+﻿
+@model CentiroHomeAssignment.Views.Orders.GetAllOrdersViewModel
+
+
+@if (Model.Error != null)
+{
+    <div class="text-center">
+        <h1 class="display-4">@Model.Error.ErrorCode</h1>
+        <p>@Model.Error.ErrorMassage.</p>
+    </div>
+} else
+{
+<div class="text-center">
+    <h1 class="display-4">All Orders</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Order Date</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <th scope="row">@order.OrderNumber</th>
+                    <td>@order.OrderDate</td>
+                    <td>@order.CustomerName</td>
+                    <td>@order.CustomerNumber</td>
+                    <td><a class="badge badge-info" asp-area="" asp-controller="Orders" asp-action="GetByOrderNumber" asp-route-id = "@order.OrderNumber" >Show Order Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+</div>
+
+}

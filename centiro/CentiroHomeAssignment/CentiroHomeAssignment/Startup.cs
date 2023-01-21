@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CentiroHomeAssignment.Repositories;
+using CentiroHomeAssignment.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,8 @@ namespace CentiroHomeAssignment
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddSingleton<IOrderRepository ,OrderRepository>();
+            services.AddScoped<IOrderService, OrderService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,8 +56,11 @@ namespace CentiroHomeAssignment
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
-                    name: "OrdersController",
-                    pattern: "{controller=OrdersController}");
+                    name: "default",
+                    pattern: "{controller=Orders}/{action=GetAll}");
+                endpoints.MapControllerRoute(
+                    name: "GetByOrderNumber",
+                    pattern: "{controller=Orders}/{action=GetByOrderNumber}/{id?}");
             });
         }
     }

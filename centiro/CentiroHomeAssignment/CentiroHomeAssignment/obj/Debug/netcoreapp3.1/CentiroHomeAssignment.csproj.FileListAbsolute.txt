@@ -358,3 +358,5 @@
 /Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/obj/Debug/netcoreapp3.1/CentiroHomeAssignment.dll
 /Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/obj/Debug/netcoreapp3.1/CentiroHomeAssignment.pdb
 /Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/obj/Debug/netcoreapp3.1/CentiroHomeAssignment.genruntimeconfig.cache
+/Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/obj/Debug/netcoreapp3.1/Razor/Views/Orders/GetAll.cshtml.g.cs
+/Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/obj/Debug/netcoreapp3.1/Razor/Views/Orders/GetByOrderNumber.cshtml.g.cs
