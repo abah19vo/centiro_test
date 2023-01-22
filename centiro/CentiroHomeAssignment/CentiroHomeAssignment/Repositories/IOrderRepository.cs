@@ -9,6 +9,14 @@ namespace CentiroHomeAssignment.Repositories
         public List<OrderModel> GetAllOrders();
 
         public OrderModel GetOrderNumber(int ordernumber);
+
+        public void DeleteOrderNumber(int ordernumber);
+
+        public int CreateOrder(OrderModel newOrder);
+
+        public string CreateOrderLine(int orderNumber,OrderLineModel newOrder);
+
+
     }
 }
 

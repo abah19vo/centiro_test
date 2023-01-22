@@ -17,14 +17,15 @@
           "/Users/ahmadabdullah/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp6"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "netcoreapp6",
             "projectReferences": {
               "/Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/CentiroHomeAssignment.csproj": {
                 "projectPath": "/Users/ahmadabdullah/Documents/GitHub/centiro_test/centiro/CentiroHomeAssignment/CentiroHomeAssignment/CentiroHomeAssignment.csproj"
@@ -39,8 +40,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "netcoreapp6",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
@@ -52,7 +53,7 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.7.1, )"
+              "version": "[17.4.1, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -92,14 +93,15 @@
           "/Users/ahmadabdullah/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp6"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "netcoreapp6",
             "projectReferences": {}
           }
         },
@@ -110,8 +112,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "netcoreapp6",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -129,12 +131,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[3.1.32, 3.1.32]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

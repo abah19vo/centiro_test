@@ -1,0 +1,39 @@
+﻿@model OrderModel
+
+
+
+<form method="post" asp-controller="Orders" asp-action="Create">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Category</h2>
+            <hr />
+        </div>
+        @*<div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for= "CustomerName"></label>
+            <input asp-for= "CustomerName" class="form-control" />
+            <span asp-validation-for= "CustomerName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for= "CustomerNumber"></label>
+            <input asp-for= "CustomerNumber" class="form-control" />
+            <span asp-validation-for= "CustomerNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="OrderDate"></label>
+            <input asp-for= "OrderDate" class="form-control" />
+            <span asp-validation-for= "OrderDate" class="text-danger"></span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="OrdersController" asp-action="GetAll" class="btn btn-secondary" style="width:150px">
+            Back to List
+        </a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

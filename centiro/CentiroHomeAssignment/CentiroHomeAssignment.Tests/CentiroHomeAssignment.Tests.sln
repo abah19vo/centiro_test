@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentiroHomeAssignment.Tests", "CentiroHomeAssignment.Tests.csproj", "{FAD0830C-6C3E-4A50-9F68-B76B6EA97BAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAD0830C-6C3E-4A50-9F68-B76B6EA97BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD0830C-6C3E-4A50-9F68-B76B6EA97BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD0830C-6C3E-4A50-9F68-B76B6EA97BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD0830C-6C3E-4A50-9F68-B76B6EA97BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C29918F-E237-4C78-911B-C257BD0AB2A4}
+	EndGlobalSection
+EndGlobal

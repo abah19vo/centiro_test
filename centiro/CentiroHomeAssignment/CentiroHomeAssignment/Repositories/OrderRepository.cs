@@ -21,6 +21,19 @@ namespace CentiroHomeAssignment.Repositories
             allOrders = result;
         }
 
+        public void DeleteOrderNumber(int ordernumber)
+        {
+            allOrders.RemoveAll((order)=> order.OrderNumber == ordernumber);
+        }
+
+        public int CreateOrder(OrderModel newOrder)
+        {
+            newOrder.OrderNumber = allOrders.Count;
+
+            allOrders.Add(newOrder);
+            return newOrder.OrderNumber;
+        }
+
         public List<OrderModel> GetAllOrders() => allOrders;
 
         public OrderModel GetOrderNumber(int ordernumber) => allOrders.Find((order) => order.OrderNumber == ordernumber);
@@ -46,15 +59,25 @@ namespace CentiroHomeAssignment.Repositories
                 newOrder.OrderLines.Add(new OrderLineModel(
                     line[2],
                     line[3],
-                    int.Parse(line[4]),
+                    line[4],
                     line[5],
                     line[6],
-                    double.Parse(line[7]),
+                    line[7],
                     line[8]
                     ));
             }
             return newOrder;
         }
-	}
+
+        public string CreateOrderLine(int orderNumber, OrderLineModel newOrderLine)
+        {
+
+            var orderLines = allOrders.Find((order) => order.OrderNumber == orderNumber).OrderLines;
+            newOrderLine.OrderLineNumber = orderLines.Count.ToString();
+            orderLines.Add(newOrderLine);
+            return newOrderLine.OrderLineNumber;
+
+        }
+    }
 }
 

@@ -1,38 +1,50 @@
-﻿<Properties StartupConfiguration="{55E29100-49EF-4E10-8761-1CCD7F7DFC3A}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="CentiroHomeAssignment/App_Data/Order3.txt">
+﻿<Properties StartupConfiguration="{7120ED89-C237-43C2-8CC2-745B9191BE54}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CentiroHomeAssignment.Tests/OrderUnitTest.cs">
     <Files>
-      <File FileName="CentiroHomeAssignment/App_Data/Order1.txt" Line="1" Column="1" />
-      <File FileName="CentiroHomeAssignment/App_Data/Order2.txt" Line="1" Column="1" />
-      <File FileName="CentiroHomeAssignment/App_Data/Order3.txt" Line="1" Column="1" />
+      <File FileName="CentiroHomeAssignment/Controllers/OrdersController.cs" />
+      <File FileName="CentiroHomeAssignment/Repositories/OrderRepository.cs" />
+      <File FileName="CentiroHomeAssignment/Views/Orders/GetByOrderNumber.cshtml" />
+      <File FileName="CentiroHomeAssignment/Models/ErrorModel.cs" />
+      <File FileName="CentiroHomeAssignment/Controllers/HomeController.cs" />
+      <File FileName="CentiroHomeAssignment/Views/Orders/GetAll.cshtml" />
+      <File FileName="CentiroHomeAssignment/Services/IOrderService.cs" />
+      <File FileName="CentiroHomeAssignment/Models/OrderLineModel.cs" Line="20" Column="21" />
+      <File FileName="CentiroHomeAssignment/App_Data/Order1.txt" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/App_Data/Order2.txt" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/App_Data/Order3.txt" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Views/Home/Index.cshtml" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Views/Home/Privacy.cshtml" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Properties/launchSettings.json" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/wwwroot/css/site.css" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Startup.cs" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Views/_ViewImports.cshtml" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Views/_ViewStart.cshtml" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/appsettings.json" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Views/Shared/_ValidationScriptsPartial.cshtml" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Repositories/IOrderRepository.cs" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Models/OrderModel.cs" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment/Views/Shared/_Layout.cshtml" NotebookId="1" />
+      <File FileName="CentiroHomeAssignment.Tests/OrderUnitTest.cs" Line="12" Column="6" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CentiroHomeAssignment" expanded="True">
             <Node name="CentiroHomeAssignment" expanded="True">
-              <Node name="App_Data" expanded="True">
-                <Node name="Order3.txt" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="CentiroHomeAssignment.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="CentiroHomeAssignment" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CentiroHomeAssignment PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CentiroHomeAssignment.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.CentiroHomeAssignment PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

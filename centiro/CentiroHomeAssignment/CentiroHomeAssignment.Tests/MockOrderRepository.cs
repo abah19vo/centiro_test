@@ -14,6 +14,11 @@ namespace CentiroHomeAssignment.Tests
 		{
 		}
 
+        public void DeleteOrderNumber(int ordernumber)
+        {
+            if(ShouldThrowError) throw new Exception();
+        }
+
         public List<OrderModel> GetAllOrders()
         {
             if (ShouldReturnEmpty) return new List<OrderModel> { };

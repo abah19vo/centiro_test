@@ -1,5 +1,5 @@
 ﻿
-@model CentiroHomeAssignment.ViewModel.GetByOrderNumerViewModel
+@model CentiroHomeAssignment.ViewModel.GetByOrderNumberViewModel
 
 
 @if (Model.Error != null)
@@ -11,40 +11,47 @@
 }
 else
 {
-	<div class="text-start">
-		<h1 class="display-4">Order Number: @Model.OrderNumber</h1>
-		<h3 class="display-6">Customer Name: @Model.Order.CustomerName</h3>
-		<h3 class="display-6">Order Date: @Model.Order.OrderDate</h3>
-		<h4 class="display-6">Customer Number: @Model.Order.CustomerNumber</h4>
-        <h3 class="display-6">Order Lines: </h3>
-		<table class="table">
-			<thead>
-				<tr>
-					<th scope="col">Order Line Number</th>
-					<th scope="col">Product Number</th>
-					<th scope="col">Quantity</th>
-					<th scope="col">Product Name</th>
-					<th scope="col">Product Description</th>
-					<th scope="col">Price</th>
-					<th scope="col">Product Group</th>
+<div class="text-start">
+    <h1 class="display-4">Order Number: @Model.OrderNumber</h1>
+    <h3 class="display-6">Customer Name: @Model.Order.CustomerName</h3>
+    <h3 class="display-6">Order Date: @Model.Order.OrderDate</h3>
+    <h4 class="display-6">Customer Number: @Model.Order.CustomerNumber</h4>
+    <h3 class="display-6">Order Lines: </h3>
 
-				</tr>
-			</thead>
-			<tbody>
-				@foreach (var orderLine in Model.Order.OrderLines)
-				{
-					<tr>
-						<th scope="row">@orderLine.OrderLineNumber</th>
-						<td>@orderLine.ProductNumber</td>
-						<td>@orderLine.Quantity</td>
-						<td>@orderLine.Name</td>
-						<td>@orderLine.Description</td>
-						<td>@orderLine.Price</td>
-						<td>@orderLine.ProductGroup</td>
-					</tr>
-				}
-			</tbody>
-		</table>
-	</div>
+    <form method="post" asp-controller="Orders" asp-action="Delete">
+        <input asp-for="Order.OrderNumber" name="id" hidden />
+        <button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Order Line Number</th>
+                <th scope="col">Product Number</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Product Group</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var orderLine in Model.Order.OrderLines)
+            {
+                <tr>
+                    <th scope="row">@orderLine.OrderLineNumber</th>
+                    <td>@orderLine.ProductNumber</td>
+                    <td>@orderLine.Quantity</td>
+                    <td>@orderLine.Name</td>
+                    <td>@orderLine.Description</td>
+                    <td>@orderLine.Price</td>
+                    <td>@orderLine.ProductGroup</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="badge badge-info" asp-area="" asp-controller="Orders" asp-action="CreateOrderLine"  asp-route-id="@Model.Order.OrderNumber">Create a New Order Line </a>
+
+</div>
 
 }

@@ -29,12 +29,13 @@
                     <td>@order.OrderDate</td>
                     <td>@order.CustomerName</td>
                     <td>@order.CustomerNumber</td>
-                    <td><a class="badge badge-info" asp-area="" asp-controller="Orders" asp-action="GetByOrderNumber" asp-route-id = "@order.OrderNumber" >Show Order Details</a></td>
+                    <td><a class="badge badge-info" asp-area="" asp-controller="Orders" asp-action="GetByOrderNumber" asp-route-id="@order.OrderNumber">Show Order Details</a></td>
                 </tr>
             }
         </tbody>
     </table>
-    
+    <a class="badge badge-info" asp-area="" asp-controller="Orders" asp-action="CreateOrder" >Create a New Order </a>
+
 </div>
 
 }
